@@ -547,7 +547,7 @@ export function HomePage() {
             <div className="dark-luxury-card rounded-2xl p-5 space-y-4">
               <div className="h-48 rounded-xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&w=800&q=80"
+                  src="/images/maharashtrian-wedding-mandap.jpg"
                   alt="Vedic Mandap Wedding"
                   className="w-full h-full object-cover hover:scale-105 transition-transform"
                 />

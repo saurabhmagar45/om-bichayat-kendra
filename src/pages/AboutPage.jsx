@@ -89,7 +89,7 @@ export function AboutPage() {
             </div>
             <div className="h-40 rounded-2xl overflow-hidden shadow-md">
               <img
-                src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&w=800&q=80"
+                src="/images/maharashtrian-wedding-mandap.jpg"
                 alt="पवित्र वैदिक मंडप व तोरण"
                 className="w-full h-full object-cover hover:scale-105 transition-transform"
               />
