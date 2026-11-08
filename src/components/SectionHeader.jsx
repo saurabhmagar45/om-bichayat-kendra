@@ -30,7 +30,7 @@ export function SectionHeader({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className={`text-3xl md:text-5xl font-royal font-bold tracking-tight mb-4 ${
+        className={`text-3xl md:text-5xl font-royal font-bold tracking-normal leading-snug mb-4 ${
           dark ? 'text-[#FAF7F2]' : 'text-[#701F35]'
         }`}
       >

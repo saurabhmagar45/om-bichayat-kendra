@@ -16,10 +16,12 @@
   --color-charcoal-muted: #574F4A;
   --color-charcoal-light: #7E746F;
   
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-cinzel: 'Cinzel', serif;
-  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Rozha One', 'Tiro Devanagari Marathi', 'Playfair Display', Georgia, serif;
+  --font-cinzel: 'Rozha One', 'Cinzel', serif;
+  --font-cormorant: 'Tiro Devanagari Marathi', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Mukta', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-royal: 'Rozha One', 'Tiro Devanagari Marathi', 'Playfair Display', Georgia, serif;
+  --font-traditional: 'Yatra One', 'Rozha One', serif;
 }
 
 @layer base {
@@ -31,18 +33,19 @@
   body {
     background-color: #FAF7F2;
     color: #282321;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Mukta', 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;
   }
 
   h1, h2, h3, .font-royal {
-    font-family: 'Playfair Display', Georgia, serif;
-    letter-spacing: -0.01em;
+    font-family: 'Rozha One', 'Tiro Devanagari Marathi', 'Playfair Display', Georgia, serif;
+    letter-spacing: normal;
+    line-height: 1.25;
   }
 
   .font-cinzel {
-    font-family: 'Cinzel', serif;
-    letter-spacing: 0.04em;
+    font-family: 'Rozha One', 'Cinzel', serif;
+    letter-spacing: 0.02em;
   }
 }
 

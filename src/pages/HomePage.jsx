@@ -189,9 +189,9 @@ export function HomePage() {
       {/* 2. BESPOKE SERVICES OVERVIEW */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
-          badge="Royal Offerings"
-          title="Bespoke Wedding & Event Services"
-          subtitle="From majestic architectural decor and sacred Vedic mandaps to 7-star catering and full wedding management, every aspect is curated with regal grace."
+          badge="राजेशाही सेवा व सुविधा"
+          title="अस्सल मराठमोळी विवाह व मंगल सोहळा सेवा"
+          subtitle="पारंपरिक वैदिक संस्कार मंडप, सुवर्ण नक्षीदार सजावट, केळीच्या पानावरील शाही पंगत ते संपूर्ण विवाह नियोजनापर्यंत — प्रत्येक क्षण राजेशाही थाटात आणि आपुलकीने साकारला जातो."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -250,7 +250,7 @@ export function HomePage() {
             to="/services"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[#701F35] text-[#701F35] font-semibold text-xs uppercase tracking-wider hover:bg-[#701F35] hover:text-[#FAF7F2] transition-all"
           >
-            <span>Explore All 8 Specialized Services</span>
+            <span>सर्व ८ वैशिष्ट्यपूर्ण विवाह सेवा पहा</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -365,9 +365,9 @@ export function HomePage() {
       {/* 4. UTENSILS & EQUIPMENT RENTAL SECTION */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
-          badge="Turnkey Equipment Rentals"
-          title="Wedding Utensils & Equipment Rental"
-          subtitle="From mirror-finished copper chafing dishes and solid brass Maharaja thalis to gold Chiavari chairs and 50-litre halwai kadais — available for rent across Maharashtra, Rajasthan, and Delhi."
+          badge="बिछायत व भांडी साहित्य भाड्याने"
+          title="विवाह भांडी व बिछायत साहित्य भाड्याने"
+          subtitle="अस्सल तांब्या-पितळेची भांडी, महाराजा थाळी सेट्स, हलवाई कढई, लाकडी पाट, गाद्या, लोड, तक्के व पंगत साहित्यासह विदर्भातील सर्वात मोठा साठा."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -421,7 +421,7 @@ export function HomePage() {
             to="/rentals"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[#701F35] text-[#701F35] font-semibold text-xs uppercase tracking-wider hover:bg-[#701F35] hover:text-[#FAF7F2] transition-all"
           >
-            <span>Explore All 10 Rental Categories</span>
+            <span>सर्व १० बिछायत व भांडी साहित्य प्रकार पहा</span>
             <ShoppingBag className="w-4 h-4" />
           </Link>
         </div>
@@ -431,9 +431,9 @@ export function HomePage() {
       <section className="py-20 bg-[#FAF7F2] border-t border-[#C6A15B]/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            badge="Culinary Royalty"
-            title="Popular Wedding Catering Packages"
-            subtitle="Centuries-old recipes, live royal chaat stations, and slow-dum handi biryanis served in brass and silver thalis by master Maharaj chefs."
+            badge="अस्सल मराठमोळी चव"
+            title="शाही केटरिंग व पारंपारिक पंगत पॅकेजेस"
+            subtitle="गावरान तुपातील पुरणपोळी, विदर्भ वऱ्हाडी भोजन, खान्देशी मांडे, दम बिर्याणी आणि अनुभवी महाराज व आचारी पथकासह अविस्मरणीय पंगत थाट."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -516,7 +516,7 @@ export function HomePage() {
               to="/catering"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#701F35] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider hover:bg-[#8C2743] transition-all"
             >
-              <span>Explore All Catering Packages &amp; Master Chefs (केटरिंग व आचारी संघ)</span>
+              <span>सर्व केटरिंग पॅकेजेस व मुख्य आचारी (महाराज) संघ पहा</span>
               <ChefHat className="w-4 h-4 text-[#C6A15B]" />
             </Link>
           </div>
@@ -613,9 +613,9 @@ export function HomePage() {
       {/* 7. CLIENT TESTIMONIALS */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
-          badge="Words of Gratitude"
-          title="What Our Royal Couples Say"
-          subtitle="Real memories and cherished blessings from families who entrusted us with their sacred wedding celebrations."
+          badge="ग्राहकांचे मनोगत व आशीर्वाद"
+          title="आमच्या आनंदी यजमानांचे अनुभव"
+          subtitle="ज्या कुटुंबांनी आपल्या घरातील पवित्र मंगल कार्याची संपूर्ण जबाबदारी ओम बिछायत केंद्रावर सोपवली, त्यांच्या काही प्रातिनिधिक भावना."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -664,15 +664,15 @@ export function HomePage() {
           <div className="relative z-10 max-w-2xl space-y-6">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#FAF7F2]/10 text-[#C6A15B] text-xs font-semibold tracking-wider uppercase border border-[#C6A15B]/30">
               <Sparkles className="w-3.5 h-3.5" />
-              Limited Dates Available for 2026 – 2027
+              विवाह तारखांची आगाऊ नोंदणी सुरू (२०२६ – २०२७)
             </span>
 
             <h2 className="font-royal text-3xl sm:text-5xl font-bold leading-tight text-[#FAF7F2]">
-              Ready to Orchestrate Your Sacred Celebration?
+              आपल्या घरातील मंगल सोहळा राजेशाही थाटात साकारूया!
             </h2>
 
             <p className="text-sm sm:text-base text-[#FAF7F2]/80 leading-relaxed font-light">
-              Speak directly with our senior wedding directors. Receive a customized 3D decor theme moodboard, catering menu tasting, and transparent rental quotation.
+              आमच्या तज्ज्ञ व्यवस्थापकांशी थेट संपर्क साधा. संपूर्ण मंडप डिझाइन, केटरिंग मेनू आणि बिछायत साहित्याची परिपूर्ण योजना एकाच छताखाली मिळवा.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
