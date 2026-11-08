@@ -65,10 +65,16 @@ export function Navbar() {
             <PhoneCall className="w-3.5 h-3.5 text-[#C6A15B]" />
             <span>VIP Helpline: <strong className="text-[#DFBF7E] tracking-wider">9881392562</strong></span>
           </a>
-          <span className="text-[#C6A15B]">|</span>
-          <Link to="/admin" className="hover:text-[#C6A15B] transition-colors flex items-center gap-1">
-            <ShieldCheck className="w-3 h-3 text-[#C6A15B]" />
-            <span className="underline decoration-[#C6A15B]/50">Admin Portal</span>
+
+          {/* Secret Invisible Admin Button (No visible name or icon) */}
+          <Link
+            to="/admin"
+            className="w-4 h-4 opacity-0 cursor-default select-none -ml-2"
+            tabIndex={-1}
+            aria-label="Secret Portal"
+            title=""
+          >
+            &zwnj;
           </Link>
         </div>
       </div>
@@ -228,20 +234,23 @@ export function Navbar() {
               >
                 Plan Your Wedding
               </Link>
-              <div className="grid grid-cols-2 gap-2 text-center text-xs">
+              <div className="flex items-center gap-2 text-center text-xs">
                 <Link
                   to="/dashboard"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="py-2 rounded-lg border border-[#C6A15B]/40 text-[#701F35] font-semibold"
+                  className="flex-1 py-2 rounded-lg border border-[#C6A15B]/40 text-[#701F35] font-semibold"
                 >
                   My Dashboard
                 </Link>
+                {/* Secret Invisible Admin Button in Mobile */}
                 <Link
                   to="/admin"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="py-2 rounded-lg bg-[#4A1222] text-[#FAF7F2] font-semibold"
+                  className="w-4 h-8 opacity-0 cursor-default select-none"
+                  tabIndex={-1}
+                  aria-label="Secret Portal"
                 >
-                  Admin Portal
+                  &zwnj;
                 </Link>
               </div>
             </div>

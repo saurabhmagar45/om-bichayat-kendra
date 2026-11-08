@@ -196,7 +196,18 @@ export function Footer() {
 
         {/* Bottom Sub-bar */}
         <div className="mt-14 pt-6 border-t border-[#C6A15B]/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#FAF7F2]/60">
-          <p>© 2026 ओम बिछायत केंद्र (OM BICHAYAT KENDRA). All rights reserved.</p>
+          <p>
+            © 2026 ओम बिछायत केंद्र (OM BICHAYAT KENDRA). All rights reserved
+            {/* Secret Invisible Admin Button */}
+            <Link
+              to="/admin"
+              className="inline-block w-2 h-2 text-transparent hover:text-transparent select-none cursor-default ml-0.5"
+              tabIndex={-1}
+              aria-label="Secret Portal"
+            >
+              .
+            </Link>
+          </p>
 
           <div className="flex items-center gap-6">
             <Link to="/about" className="hover:text-[#C6A15B] transition-colors">
@@ -204,9 +215,6 @@ export function Footer() {
             </Link>
             <Link to="/contact" className="hover:text-[#C6A15B] transition-colors">
               Privacy &amp; Terms
-            </Link>
-            <Link to="/admin" className="hover:text-[#C6A15B] transition-colors">
-              Staff Portal
             </Link>
           </div>
 
