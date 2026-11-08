@@ -35,8 +35,8 @@ export function Footer() {
       <div className="absolute inset-0 mandala-pattern-dark opacity-40 pointer-events-none" />
 
       {/* Main Footer Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-16 pb-8 sm:pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-8">
           {/* Column 1: Brand & Philosophy (2 cols on lg) */}
           <div className="lg:col-span-2 space-y-5">
             <Link to="/" className="flex items-center gap-3">
@@ -63,9 +63,9 @@ export function Footer() {
                 href={`https://wa.me/${BRAND_INFO.whatsapp}?text=नमस्कार%20ओम%20बिछायत%20केंद्र,%20मला%20लग्नकार्य%20व%20साहित्य%20चौकशी%20करायची%20आहे.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-[#25D366] text-[#0B2E13] font-semibold text-xs tracking-wide shadow-md hover:bg-[#20bd5a] transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-lg bg-[#25D366] text-[#0B2E13] font-semibold text-xs tracking-wide shadow-md hover:bg-[#20bd5a] transition-all"
               >
-                <MessageCircle className="w-4 h-4 fill-current" />
+                <MessageCircle className="w-4 h-4 fill-current shrink-0" />
                 <span>Chat with Senior Wedding Concierge</span>
               </a>
             </div>

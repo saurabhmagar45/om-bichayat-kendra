@@ -102,17 +102,17 @@ export function HomePage() {
         </div>
 
         {/* Hero Content Container - Fully encompasses heading, CTA buttons, AND stats bar */}
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 pb-16 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-28 pb-12 sm:pb-16 text-center">
           {/* Royal Pill Badge */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[#DFBF7E]/50 bg-[#380E1B]/80 backdrop-blur-md text-[#DFBF7E] text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 shadow-lg shadow-black/25"
+            className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-full border border-[#DFBF7E]/50 bg-[#380E1B]/80 backdrop-blur-md text-[#DFBF7E] text-[10px] sm:text-xs font-semibold tracking-wider sm:tracking-widest uppercase mb-4 sm:mb-6 shadow-lg shadow-black/25"
           >
-            <Sparkles className="w-4 h-4 text-[#C6A15B]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />
             <span>ओम बिछायत केंद्र • OM BICHAYAT KENDRA</span>
-            <Sparkles className="w-4 h-4 text-[#C6A15B]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />
           </motion.div>
 
           {/* Master Heading */}
@@ -120,7 +120,7 @@ export function HomePage() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-royal font-bold tracking-tight text-[#FAF7F2] leading-[1.1] mb-5 drop-shadow-md"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-royal font-bold tracking-tight text-[#FAF7F2] leading-[1.15] sm:leading-[1.1] mb-4 sm:mb-5 drop-shadow-md px-2"
           >
             Create Your Dream <br className="hidden sm:inline" />
             <span className="gold-shimmer-text">Wedding With Us</span>
@@ -131,9 +131,9 @@ export function HomePage() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.2 }}
-            className="flex items-center justify-center my-6 sm:my-8 mb-10 sm:mb-14"
+            className="flex items-center justify-center my-4 sm:my-8 mb-8 sm:mb-14"
           >
-            <OmNamahShivaya className="w-[320px] sm:w-[480px] md:w-[600px] lg:w-[680px] max-w-[92vw] h-auto drop-shadow-[0_4px_16px_rgba(223,191,126,0.45)] hover:scale-[1.02] transition-transform duration-500" />
+            <OmNamahShivaya className="w-[270px] sm:w-[480px] md:w-[600px] lg:w-[680px] max-w-[92vw] h-auto drop-shadow-[0_4px_16px_rgba(223,191,126,0.45)] hover:scale-[1.02] transition-transform duration-500" />
           </motion.div>
 
           {/* Primary Action Buttons */}
@@ -141,11 +141,11 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 w-full max-w-md sm:max-w-none mx-auto"
           >
             <Link
               to="/services"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl gold-btn text-sm uppercase tracking-wider font-bold shadow-xl flex items-center justify-center gap-2.5 group cursor-pointer"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl gold-btn text-xs sm:text-sm uppercase tracking-wider font-bold shadow-xl flex items-center justify-center gap-2.5 group cursor-pointer"
             >
               <span>Explore Services</span>
               <ArrowRight className="w-4 h-4 text-[#282321] group-hover:translate-x-1 transition-transform" />
@@ -153,7 +153,7 @@ export function HomePage() {
 
             <Link
               to="/booking"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#FAF7F2]/10 hover:bg-[#FAF7F2]/20 text-[#FAF7F2] border border-[#DFBF7E]/50 backdrop-blur-md text-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2 shadow-lg"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#FAF7F2]/10 hover:bg-[#FAF7F2]/20 text-[#FAF7F2] border border-[#DFBF7E]/50 backdrop-blur-md text-xs sm:text-sm uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-2 shadow-lg"
             >
               <CalendarCheck className="w-4 h-4 text-[#C6A15B]" />
               <span>Plan Your Wedding</span>
@@ -165,14 +165,14 @@ export function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-16 pt-8 border-t border-[#DFBF7E]/30 grid grid-cols-2 md:grid-cols-4 gap-6 text-[#FAF7F2]"
+            className="mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-[#DFBF7E]/30 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-[#FAF7F2]"
           >
             {BRAND_INFO.stats.map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <span className="block font-cinzel text-3xl sm:text-4xl font-bold text-[#DFBF7E] drop-shadow-sm">
+              <div key={idx} className="text-center p-2 rounded-xl bg-black/15 sm:bg-transparent">
+                <span className="block font-cinzel text-2xl sm:text-3xl md:text-4xl font-bold text-[#DFBF7E] drop-shadow-sm">
                   {stat.value}
                 </span>
-                <span className="block text-xs sm:text-sm text-[#FAF7F2]/85 font-medium mt-1">
+                <span className="block text-[11px] sm:text-xs md:text-sm text-[#FAF7F2]/85 font-medium mt-1 leading-snug">
                   {stat.label}
                 </span>
               </div>
@@ -187,14 +187,14 @@ export function HomePage() {
       </section>
 
       {/* 2. BESPOKE SERVICES OVERVIEW */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
           badge="राजेशाही सेवा व सुविधा"
           title="अस्सल मराठमोळी विवाह व मंगल सोहळा सेवा"
           subtitle="पारंपरिक वैदिक संस्कार मंडप, सुवर्ण नक्षीदार सजावट, केळीच्या पानावरील शाही पंगत ते संपूर्ण विवाह नियोजनापर्यंत — प्रत्येक क्षण राजेशाही थाटात आणि आपुलकीने साकारला जातो."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {SERVICES_DATA.slice(0, 4).map((service, idx) => (
             <motion.div
               key={service.id}
@@ -202,28 +202,28 @@ export function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group"
+              className="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-xl transition-all"
             >
-              <div className="relative h-52 overflow-hidden">
+              <div className="relative h-48 sm:h-52 overflow-hidden bg-stone-900">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
-                <span className="absolute bottom-3 left-3 text-xs uppercase font-bold text-[#C6A15B] tracking-wider">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <span className="absolute bottom-3 left-3 text-xs uppercase font-bold text-[#C6A15B] tracking-wider drop-shadow">
                   {service.category}
                 </span>
                 {service.popular && (
-                  <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#701F35] text-[#FAF7F2] text-[10px] font-bold border border-[#C6A15B]/40">
+                  <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#701F35] text-[#FAF7F2] text-[10px] font-bold border border-[#C6A15B]/40 shadow-xs">
                     High Demand
                   </span>
                 )}
               </div>
 
-              <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+              <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3 sm:space-y-4">
                 <div>
-                  <h3 className="font-royal text-xl font-bold text-[#701F35] mb-2 group-hover:text-[#8C2743] transition-colors">
+                  <h3 className="font-royal text-lg sm:text-xl font-bold text-[#701F35] mb-2 leading-snug group-hover:text-[#8C2743] transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-xs text-[#574F4A] line-clamp-3 leading-relaxed">
@@ -234,7 +234,7 @@ export function HomePage() {
                 <div className="pt-3 border-t border-[#C6A15B]/20 flex items-center justify-end">
                   <button
                     onClick={() => setActiveServiceDetail(service)}
-                    className="px-4 py-1.5 rounded-lg border border-[#C6A15B]/50 text-xs font-semibold text-[#701F35] hover:bg-[#701F35] hover:text-[#FAF7F2] transition-colors cursor-pointer flex items-center gap-1"
+                    className="w-full sm:w-auto justify-center px-4 py-2 sm:py-1.5 rounded-lg border border-[#C6A15B]/50 text-xs font-semibold text-[#701F35] hover:bg-[#701F35] hover:text-[#FAF7F2] transition-colors cursor-pointer flex items-center gap-1"
                   >
                     <span>View Details</span>
                     <ChevronRight className="w-3.5 h-3.5" />
@@ -245,7 +245,7 @@ export function HomePage() {
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-8 sm:mt-10">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[#701F35] text-[#701F35] font-semibold text-xs uppercase tracking-wider hover:bg-[#701F35] hover:text-[#FAF7F2] transition-all"
@@ -257,7 +257,7 @@ export function HomePage() {
       </section>
 
       {/* 3. FEATURED DECORATIONS WITH TAB FILTER */}
-      <section className="py-20 bg-[#F5EFEB] border-y border-[#C6A15B]/20">
+      <section className="py-12 sm:py-20 bg-[#F5EFEB] border-y border-[#C6A15B]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="पारंपारिक विवाह दालन"
@@ -266,12 +266,12 @@ export function HomePage() {
           />
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mb-6 sm:mb-10">
             {decorTabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveDecorTab(tab)}
-                className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer ${
+                className={`px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide transition-all cursor-pointer ${
                   activeDecorTab === tab
                     ? 'bg-[#701F35] text-[#FAF7F2] shadow-md border border-[#701F35]'
                     : 'bg-white text-[#282321] border border-[#C6A15B]/30 hover:border-[#701F35]'
@@ -283,7 +283,7 @@ export function HomePage() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {filteredGallery.map((item, idx) => {
               const wishlisted = isWishlisted(item.id);
               return (
@@ -295,7 +295,7 @@ export function HomePage() {
                   transition={{ duration: 0.4, delay: idx * 0.08 }}
                   className="luxury-card rounded-2xl overflow-hidden group relative"
                 >
-                  <div className="relative h-64 overflow-hidden bg-stone-900">
+                  <div className="relative h-56 sm:h-64 overflow-hidden bg-stone-900">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -327,7 +327,7 @@ export function HomePage() {
                     {/* Bottom Preview Trigger */}
                     <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between text-white">
                       <div>
-                        <h4 className="font-royal text-lg font-bold drop-shadow">
+                        <h4 className="font-royal text-base sm:text-lg font-bold drop-shadow line-clamp-1">
                           {item.title}
                         </h4>
                         <p className="text-[11px] text-[#FAF7F2]/80 flex items-center gap-1 mt-0.5">
@@ -350,7 +350,7 @@ export function HomePage() {
             })}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-8 sm:mt-10">
             <Link
               to="/gallery"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#701F35] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider hover:bg-[#8C2743] transition-all"
@@ -363,14 +363,14 @@ export function HomePage() {
       </section>
 
       {/* 4. UTENSILS & EQUIPMENT RENTAL SECTION */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
           badge="बिछायत व भांडी साहित्य भाड्याने"
           title="विवाह भांडी व बिछायत साहित्य भाड्याने"
           subtitle="अस्सल तांब्या-पितळेची भांडी, महाराजा थाळी सेट्स, हलवाई कढई, लाकडी पाट, गाद्या, लोड, तक्के व पंगत साहित्यासह विदर्भातील सर्वात मोठा साठा."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {featuredRentals.map((prod, idx) => (
             <motion.div
               key={prod.id}
@@ -405,7 +405,7 @@ export function HomePage() {
                 <div className="pt-3 border-t border-[#C6A15B]/20">
                   <a
                     href="tel:9881392562"
-                    className="w-full py-2 rounded-lg bg-[#701F35] hover:bg-[#8C2743] text-[#FAF7F2] text-xs font-semibold flex items-center justify-center gap-1.5 transition-all shadow-xs"
+                    className="w-full py-2.5 rounded-lg bg-[#701F35] hover:bg-[#8C2743] text-[#FAF7F2] text-xs font-semibold flex items-center justify-center gap-1.5 transition-all shadow-xs"
                   >
                     <Phone className="w-3.5 h-3.5 text-[#C6A15B]" />
                     <span>चौकशी: 9881392562</span>
@@ -416,7 +416,7 @@ export function HomePage() {
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-8 sm:mt-10">
           <Link
             to="/rentals"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[#701F35] text-[#701F35] font-semibold text-xs uppercase tracking-wider hover:bg-[#701F35] hover:text-[#FAF7F2] transition-all"
@@ -428,7 +428,7 @@ export function HomePage() {
       </section>
 
       {/* 5. POPULAR CATERING PACKAGES SPOTLIGHT */}
-      <section className="py-20 bg-[#FAF7F2] border-t border-[#C6A15B]/25">
+      <section className="py-12 sm:py-20 bg-[#FAF7F2] border-t border-[#C6A15B]/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="अस्सल मराठमोळी चव"
@@ -436,7 +436,7 @@ export function HomePage() {
             subtitle="गावरान तुपातील पुरणपोळी, विदर्भ वऱ्हाडी भोजन, खान्देशी मांडे, दम बिर्याणी आणि अनुभवी महाराज व आचारी पथकासह अविस्मरणीय पंगत थाट."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
             {featuredCatering.map((pkg, idx) => (
               <motion.div
                 key={pkg.id}
@@ -446,7 +446,7 @@ export function HomePage() {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between"
               >
-                <div className="relative h-56 bg-stone-900 overflow-hidden">
+                <div className="relative h-52 sm:h-56 bg-stone-900 overflow-hidden">
                   <img
                     src={pkg.image}
                     alt={pkg.title}
@@ -463,9 +463,9 @@ export function HomePage() {
                   </div>
                 </div>
 
-                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="font-royal text-xl font-bold text-[#701F35] mb-2">
+                    <h3 className="font-royal text-lg sm:text-xl font-bold text-[#701F35] mb-2 leading-snug">
                       {pkg.title}
                     </h3>
                     <p className="text-xs text-[#574F4A] leading-relaxed mb-3">
@@ -511,7 +511,7 @@ export function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-8 sm:mt-10">
             <Link
               to="/catering"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#701F35] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider hover:bg-[#8C2743] transition-all"
@@ -524,7 +524,7 @@ export function HomePage() {
       </section>
 
       {/* 6. OUR RECENT ROYAL WEDDING PROJECTS */}
-      <section className="py-20 bg-[#380E1B] text-[#FAF7F2] relative overflow-hidden">
+      <section className="py-12 sm:py-20 bg-[#380E1B] text-[#FAF7F2] relative overflow-hidden">
         <div className="absolute inset-0 mandala-pattern-dark opacity-35 pointer-events-none" />
 
         {/* Ambient Swastik in Recent Projects */}
@@ -543,9 +543,9 @@ export function HomePage() {
             subtitle="अस्सल मराठमोळी परंपरा, भव्य वैदिक मंडप आणि चवदार पंगत जिथे ओम बिछायत केंद्राने प्रत्येक विवाह सोहळा अविस्मरणीय केला."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="dark-luxury-card rounded-2xl p-5 space-y-4">
-              <div className="h-48 rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div className="dark-luxury-card rounded-2xl p-4 sm:p-5 space-y-3 sm:space-y-4">
+              <div className="h-44 sm:h-48 rounded-xl overflow-hidden">
                 <img
                   src="/images/maharashtrian-wedding-mandap.jpg"
                   alt="Vedic Mandap Wedding"
@@ -556,7 +556,7 @@ export function HomePage() {
                 <span className="text-[10px] text-[#C6A15B] font-bold uppercase tracking-wider block">
                   चिखली • शाही पॅलेस मंडप
                 </span>
-                <h4 className="font-royal text-xl font-bold text-[#FAF7F2] mt-1">
+                <h4 className="font-royal text-lg sm:text-xl font-bold text-[#FAF7F2] mt-1">
                   देशमुख शाही विवाह सोहळा
                 </h4>
                 <p className="text-xs text-[#FAF7F2]/75 leading-relaxed mt-2">
@@ -565,8 +565,8 @@ export function HomePage() {
               </div>
             </div>
 
-            <div className="dark-luxury-card rounded-2xl p-5 space-y-4">
-              <div className="h-48 rounded-xl overflow-hidden">
+            <div className="dark-luxury-card rounded-2xl p-4 sm:p-5 space-y-3 sm:space-y-4">
+              <div className="h-44 sm:h-48 rounded-xl overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80"
                   alt="Royal Couple Wedding"
@@ -577,7 +577,7 @@ export function HomePage() {
                 <span className="text-[10px] text-[#C6A15B] font-bold uppercase tracking-wider block">
                   बुलढाणा • भव्य रिसेप्शन लॉन
                 </span>
-                <h4 className="font-royal text-xl font-bold text-[#FAF7F2] mt-1">
+                <h4 className="font-royal text-lg sm:text-xl font-bold text-[#FAF7F2] mt-1">
                   पाटील व कदम राजेशाही विवाह
                 </h4>
                 <p className="text-xs text-[#FAF7F2]/75 leading-relaxed mt-2">
@@ -586,8 +586,8 @@ export function HomePage() {
               </div>
             </div>
 
-            <div className="dark-luxury-card rounded-2xl p-5 space-y-4">
-              <div className="h-48 rounded-xl overflow-hidden">
+            <div className="dark-luxury-card rounded-2xl p-4 sm:p-5 space-y-3 sm:space-y-4">
+              <div className="h-44 sm:h-48 rounded-xl overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80"
                   alt="Traditional Haldi Ceremony"
@@ -598,7 +598,7 @@ export function HomePage() {
                 <span className="text-[10px] text-[#C6A15B] font-bold uppercase tracking-wider block">
                   चिखली • पारंपारिक हळदी सोहळा
                 </span>
-                <h4 className="font-royal text-xl font-bold text-[#FAF7F2] mt-1">
+                <h4 className="font-royal text-lg sm:text-xl font-bold text-[#FAF7F2] mt-1">
                   जोशी परिवार हळदी व संगीत उत्सव
                 </h4>
                 <p className="text-xs text-[#FAF7F2]/75 leading-relaxed mt-2">
@@ -611,14 +611,14 @@ export function HomePage() {
       </section>
 
       {/* 7. CLIENT TESTIMONIALS */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
           badge="ग्राहकांचे मनोगत व आशीर्वाद"
           title="आमच्या आनंदी यजमानांचे अनुभव"
           subtitle="ज्या कुटुंबांनी आपल्या घरातील पवित्र मंगल कार्याची संपूर्ण जबाबदारी ओम बिछायत केंद्रावर सोपवली, त्यांच्या काही प्रातिनिधिक भावना."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
           {TESTIMONIALS.map((t, idx) => (
             <motion.div
               key={t.id}
@@ -626,9 +626,9 @@ export function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="luxury-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-6 relative"
+              className="luxury-card rounded-2xl p-5 sm:p-7 flex flex-col justify-between space-y-5 sm:space-y-6 relative"
             >
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center gap-1 text-[#C6A15B]">
                   {[...Array(t.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
@@ -644,11 +644,11 @@ export function HomePage() {
                 <img
                   src={t.image}
                   alt={t.couple}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-[#C6A15B]"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#C6A15B]"
                 />
                 <div>
-                  <h4 className="text-sm font-bold text-[#701F35]">{t.couple}</h4>
-                  <p className="text-[11px] text-[#574F4A]">{t.event}</p>
+                  <h4 className="text-xs sm:text-sm font-bold text-[#701F35]">{t.couple}</h4>
+                  <p className="text-[10px] sm:text-[11px] text-[#574F4A]">{t.event}</p>
                 </div>
               </div>
             </motion.div>
@@ -657,28 +657,28 @@ export function HomePage() {
       </section>
 
       {/* 8. GRAND CALL TO ACTION BANNER */}
-      <section className="pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#701F35] via-[#4A1222] to-[#380E1B] text-[#FAF7F2] p-8 sm:p-14 border border-[#C6A15B]/50 shadow-2xl">
+      <section className="pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-gradient-to-r from-[#701F35] via-[#4A1222] to-[#380E1B] text-[#FAF7F2] p-6 sm:p-14 border border-[#C6A15B]/50 shadow-2xl">
           <div className="absolute top-0 right-0 -mr-16 -mt-16 w-80 h-80 rounded-full bg-[#C6A15B]/15 blur-3xl pointer-events-none" />
 
-          <div className="relative z-10 max-w-2xl space-y-6">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#FAF7F2]/10 text-[#C6A15B] text-xs font-semibold tracking-wider uppercase border border-[#C6A15B]/30">
+          <div className="relative z-10 max-w-2xl space-y-4 sm:space-y-6">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF7F2]/10 text-[#C6A15B] text-[10px] sm:text-xs font-semibold tracking-wider uppercase border border-[#C6A15B]/30">
               <Sparkles className="w-3.5 h-3.5" />
               विवाह तारखांची आगाऊ नोंदणी सुरू (२०२६ – २०२७)
             </span>
 
-            <h2 className="font-royal text-3xl sm:text-5xl font-bold leading-tight text-[#FAF7F2]">
+            <h2 className="font-royal text-2xl sm:text-4xl md:text-5xl font-bold leading-snug sm:leading-tight text-[#FAF7F2]">
               आपल्या घरातील मंगल सोहळा राजेशाही थाटात साकारूया!
             </h2>
 
-            <p className="text-sm sm:text-base text-[#FAF7F2]/80 leading-relaxed font-light">
+            <p className="text-xs sm:text-base text-[#FAF7F2]/80 leading-relaxed font-light">
               आमच्या तज्ज्ञ व्यवस्थापकांशी थेट संपर्क साधा. संपूर्ण मंडप डिझाइन, केटरिंग मेनू आणि बिछायत साहित्याची परिपूर्ण योजना एकाच छताखाली मिळवा.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
               <Link
                 to="/booking"
-                className="px-8 py-3.5 rounded-xl gold-btn text-xs uppercase tracking-wider font-bold shadow-xl text-center"
+                className="px-6 sm:px-8 py-3.5 rounded-xl gold-btn text-xs uppercase tracking-wider font-bold shadow-xl text-center"
               >
                 Book Free Consultation
               </Link>

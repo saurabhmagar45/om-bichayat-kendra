@@ -20,15 +20,15 @@ export function PackagesPage() {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
-        badge="Curated Turnkey Experiences"
-        title="Complete Wedding Packages"
-        subtitle="Transparent, all-inclusive luxury wedding collections designed to liberate you from multi-vendor headaches and deliver pure royal celebration."
+        badge="संपूर्ण विवाह पॅकेजेस"
+        title="राजेशाही विवाह व सोहळा पॅकेजेस"
+        subtitle="वैदिक मंडप सजावट, शाही केटरिंग, तांब्या-पितळेची भांडी, बैठक बिछायत, तुतारी-ढोल व रोषणाई — एकाच छताखाली सर्वसमावेशक राजेशाही सेवा."
       />
 
       {/* Packages Cards Grid (3 Packages) */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20 items-stretch">
         {WEDDING_PACKAGES.map((pkg, idx) => {
           return (
             <motion.div
@@ -36,7 +36,7 @@ export function PackagesPage() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.12 }}
-              className={`rounded-3xl p-7 flex flex-col justify-between relative transition-all duration-300 ${
+              className={`rounded-2xl sm:rounded-3xl p-5 sm:p-7 flex flex-col justify-between relative transition-all duration-300 ${
                 pkg.popular
                   ? 'bg-gradient-to-b from-[#FAF7F2] to-[#FFFDF9] border-2 border-[#C6A15B] shadow-2xl scale-102 lg:-translate-y-2'
                   : 'bg-white border border-[#C6A15B]/30 shadow-md'

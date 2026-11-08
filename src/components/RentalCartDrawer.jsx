@@ -83,8 +83,8 @@ export function RentalCartDrawer() {
         className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity duration-300"
       />
 
-      <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
-        <div className="w-screen max-w-md bg-[#FAF7F2] shadow-2xl flex flex-col border-l border-[#C6A15B]/30">
+      <div className="fixed inset-y-0 right-0 max-w-full flex pl-0 sm:pl-10">
+        <div className="w-screen max-w-full sm:max-w-md bg-[#FAF7F2] shadow-2xl flex flex-col border-l border-[#C6A15B]/30">
           {/* Header */}
           <div className="px-5 py-4 bg-[#701F35] text-[#FAF7F2] flex items-center justify-between border-b border-[#C6A15B]/30">
             <div className="flex items-center gap-2">

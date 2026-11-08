@@ -18,7 +18,7 @@ export function ServiceDetailModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-4 sm:p-6 font-sans">
+    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-3 sm:p-6 font-sans">
       {/* Backdrop */}
       <div
         onClick={() => setActiveServiceDetail(null)}
@@ -26,8 +26,8 @@ export function ServiceDetailModal() {
       />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-2xl bg-[#FAF7F2] rounded-2xl overflow-hidden shadow-2xl border border-[#C6A15B]/40 z-10 animate-in zoom-in-95 duration-200">
-        <div className="relative h-56 bg-stone-900">
+      <div className="relative w-full max-w-2xl max-h-[92vh] flex flex-col bg-[#FAF7F2] rounded-2xl overflow-hidden shadow-2xl border border-[#C6A15B]/40 z-10 animate-in zoom-in-95 duration-200">
+        <div className="relative h-44 sm:h-56 bg-stone-900 shrink-0">
           <img
             src={service.image}
             alt={service.title}
@@ -37,20 +37,20 @@ export function ServiceDetailModal() {
 
           <button
             onClick={() => setActiveServiceDetail(null)}
-            className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/90 transition-colors cursor-pointer"
+            className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/90 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
 
-          <div className="absolute bottom-4 left-6 right-6 text-white">
-            <span className="text-[11px] uppercase tracking-wider font-bold text-[#C6A15B] mb-1 block">
+          <div className="absolute bottom-3 left-4 right-4 sm:bottom-4 sm:left-6 sm:right-6 text-white">
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold text-[#C6A15B] mb-1 block">
               {service.category} Division
             </span>
-            <h3 className="font-royal text-2xl font-bold">{service.title}</h3>
+            <h3 className="font-royal text-lg sm:text-2xl font-bold leading-snug">{service.title}</h3>
           </div>
         </div>
 
-        <div className="p-6 space-y-5">
+        <div className="p-4 sm:p-6 space-y-4 sm:space-y-5 overflow-y-auto">
           <div className="flex items-center justify-between p-3 bg-white rounded-xl border border-[#C6A15B]/25">
             <div>
               <span className="text-[10px] text-[#574F4A] uppercase font-bold tracking-wider block">

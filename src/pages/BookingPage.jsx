@@ -140,7 +140,7 @@ export function BookingPage() {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
         badge="Direct Concierge Booking"
         title="Plan Your Royal Wedding Celebration"
@@ -233,7 +233,7 @@ export function BookingPage() {
         /* Main Booking Form Grid */
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Form Column (8 cols) */}
-          <div className="lg:col-span-8 bg-white rounded-3xl border border-[#C6A15B]/30 p-6 sm:p-10 shadow-sm">
+          <div className="lg:col-span-8 bg-white rounded-2xl sm:rounded-3xl border border-[#C6A15B]/30 p-4 sm:p-10 shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Section 1: Contact Details */}
               <div>

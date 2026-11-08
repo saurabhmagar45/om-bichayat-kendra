@@ -50,15 +50,15 @@ export function CateringPage() {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
-        badge="Imperial Royal Kitchens & Master Chefs"
-        title="Royal Wedding Catering & Master Chefs"
+        badge="शाही केटरिंग व मुख्य आचारी"
+        title="शाही विवाह केटरिंग व अनुभवी महाराज संघ"
         subtitle="अस्सल खानदानी चव, २५+ वर्षांचा अनुभव असलेले मुख्य आचारी, केळीच्या पानावर शाही पंगत आणि शुद्ध गावरान तुपातील मराठमोळे पक्वान्न — ओम बिछायत केंद्र चिखली."
       />
 
       {/* Culinary Pillars Banner */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 p-5 bg-[#FFFDF9] rounded-2xl border border-[#C6A15B]/30 text-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 mb-8 p-3 sm:p-5 bg-[#FFFDF9] rounded-2xl border border-[#C6A15B]/30 text-center">
         <div className="space-y-1">
           <Flame className="w-5 h-5 text-[#C6A15B] mx-auto" />
           <span className="block text-xs font-bold text-[#701F35]">अस्सल मंद चूल व दम स्वयंपाक</span>
@@ -319,12 +319,12 @@ export function CateringPage() {
       {activeSubTab === 'chefs' && (
         <div className="space-y-12">
           {/* Chef Section Header Intro */}
-          <div className="p-8 bg-gradient-to-r from-[#FFFDF9] via-white to-[#FAF7F2] rounded-3xl border border-[#C6A15B]/30 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="p-5 sm:p-8 bg-gradient-to-r from-[#FFFDF9] via-white to-[#FAF7F2] rounded-2xl sm:rounded-3xl border border-[#C6A15B]/30 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-2 text-center md:text-left max-w-2xl">
               <span className="px-3 py-1 rounded-full bg-[#701F35] text-[#FAF7F2] text-[10px] font-bold tracking-wider uppercase border border-[#C6A15B]/40">
                 खानदानी आचारी परंपरा (Master Culinary Artists)
               </span>
-              <h3 className="font-royal text-2xl sm:text-3xl font-bold text-[#701F35]">
+              <h3 className="font-royal text-xl sm:text-3xl font-bold text-[#701F35]">
                 आमचे मुख्य आचारी व केटरिंग शेफ (Catering Chefs &amp; Maharaj)
               </h3>
               <p className="text-xs sm:text-sm text-[#574F4A] leading-relaxed">
@@ -332,17 +332,17 @@ export function CateringPage() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto shrink-0">
               <a
                 href={`tel:${BRAND_INFO.phone}`}
-                className="px-5 py-2.5 rounded-xl border border-[#701F35] text-[#701F35] text-xs font-bold hover:bg-[#701F35]/10 flex items-center gap-2"
+                className="px-5 py-2.5 rounded-xl border border-[#701F35] text-[#701F35] text-xs font-bold hover:bg-[#701F35]/10 flex items-center justify-center gap-2 text-center"
               >
                 <Phone className="w-4 h-4 text-[#C6A15B]" />
                 <span>शेफ समुपदेशन: 9881392562</span>
               </a>
               <Link
                 to="/booking?service=catering_chef"
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#701F35] to-[#4A1222] text-[#FAF7F2] text-xs font-bold uppercase tracking-wider hover:shadow-md transition-all"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#701F35] to-[#4A1222] text-[#FAF7F2] text-xs font-bold uppercase tracking-wider hover:shadow-md transition-all text-center"
               >
                 आचारी पथक बुक करा
               </Link>

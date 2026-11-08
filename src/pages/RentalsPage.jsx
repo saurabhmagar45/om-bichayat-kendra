@@ -61,15 +61,15 @@ export function RentalsPage() {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
-        badge="45,000+ Items In Stock"
-        title="Wedding Utensils & Equipment Rental"
-        subtitle="Commercial-grade, mirror-sanitized tableware, pure brass and copper buffet vessels, halwai cooking equipment, and royal banquet furniture for unforgettable feasts."
+        badge="४५,०००+ भांडी व बिछायत साहित्य साठा"
+        title="विवाह भांडी व बिछायत साहित्य भाड्याने"
+        subtitle="अस्सल तांब्या-पितळेची भांडी, महाराजा थाळी सेट्स, हलवाई कढई, लाकडी पाट, गाद्या, लोड, तक्के व पंगत साहित्यासह विदर्भातील सर्वात मोठा साठा."
       />
 
       {/* Trust Badges Banner */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 p-5 bg-[#FFFDF9] rounded-2xl border border-[#C6A15B]/25 text-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 mb-8 sm:mb-10 p-3 sm:p-5 bg-[#FFFDF9] rounded-2xl border border-[#C6A15B]/25 text-center">
         <div className="space-y-1">
           <ShieldCheck className="w-5 h-5 text-[#C6A15B] mx-auto" />
           <span className="block text-xs font-bold text-[#701F35]">100% Food-Grade &amp; Sanitized</span>

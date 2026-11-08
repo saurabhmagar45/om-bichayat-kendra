@@ -21,20 +21,20 @@ export function ServicesPage() {
       : SERVICES_DATA.filter((s) => s.category.toLowerCase() === selectedFilter.toLowerCase());
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
-        badge="Excellence in Execution"
-        title="Our Comprehensive Wedding Services"
-        subtitle="From ceremonial Vedic mandaps and bespoke floral architecture to authentic royal catering and extensive utensil rentals — we deliver turnkey elegance."
+        badge="राजेशाही सेवा व सुविधा"
+        title="आमच्या सर्वसमावेशक विवाह सोहळा सेवा"
+        subtitle="वैदिक संस्कार मंडप, सुवर्ण नक्षीदार फुलांची सजावट, शाही पंगत ते बिछायत व भांडी साहित्यापर्यंत — प्रत्येक सोहळा अविस्मरणीय."
       />
 
       {/* Filter Tabs */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+      <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-12">
         {filterOptions.map((opt) => (
           <button
             key={opt}
             onClick={() => setSelectedFilter(opt)}
-            className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all cursor-pointer ${
+            className={`px-3.5 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold tracking-wider transition-all cursor-pointer ${
               selectedFilter === opt
                 ? 'bg-[#701F35] text-[#FAF7F2] shadow-md border border-[#701F35]'
                 : 'bg-white text-[#282321] border border-[#C6A15B]/30 hover:border-[#701F35]'
@@ -46,7 +46,7 @@ export function ServicesPage() {
       </div>
 
       {/* Services Grid (8 Services) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
         {filteredServices.map((service, idx) => (
           <motion.div
             key={service.id}
@@ -56,7 +56,7 @@ export function ServicesPage() {
             className="luxury-card rounded-2xl overflow-hidden flex flex-col sm:flex-row group"
           >
             {/* Service Thumbnail */}
-            <div className="relative w-full sm:w-2/5 min-h-[240px] overflow-hidden bg-stone-900">
+            <div className="relative w-full sm:w-2/5 min-h-[200px] sm:min-h-[240px] overflow-hidden bg-stone-900">
               <img
                 src={service.image}
                 alt={service.title}
@@ -74,12 +74,12 @@ export function ServicesPage() {
             </div>
 
             {/* Service Body */}
-            <div className="p-6 sm:w-3/5 flex flex-col justify-between space-y-4">
+            <div className="p-4 sm:p-6 sm:w-3/5 flex flex-col justify-between space-y-3 sm:space-y-4">
               <div>
-                <h3 className="font-royal text-2xl font-bold text-[#701F35] mb-2 group-hover:text-[#8C2743] transition-colors">
+                <h3 className="font-royal text-xl sm:text-2xl font-bold text-[#701F35] mb-2 leading-snug group-hover:text-[#8C2743] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#574F4A] leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-[#574F4A] leading-relaxed mb-3 sm:mb-4">
                   {service.description}
                 </p>
 
@@ -95,10 +95,10 @@ export function ServicesPage() {
               </div>
 
               {/* Action */}
-              <div className="pt-4 border-t border-[#C6A15B]/25 flex items-center justify-end">
+              <div className="pt-3 sm:pt-4 border-t border-[#C6A15B]/25 flex items-center justify-end">
                 <button
                   onClick={() => setActiveServiceDetail(service)}
-                  className="px-4 py-2 rounded-xl bg-[#701F35] hover:bg-[#8C2743] text-[#FAF7F2] text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
+                  className="w-full sm:w-auto justify-center px-4 py-2.5 sm:py-2 rounded-xl bg-[#701F35] hover:bg-[#8C2743] text-[#FAF7F2] text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
                 >
                   <span>View Details</span>
                   <ChevronRight className="w-3.5 h-3.5" />

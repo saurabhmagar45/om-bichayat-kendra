@@ -60,7 +60,7 @@ export function ContactPage() {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
         badge="संपर्क व मार्गदर्शन"
         title="ओम बिछायत केंद्र (OM BICHAYAT KENDRA)"
@@ -68,7 +68,7 @@ export function ContactPage() {
       />
 
       {/* Contact Cards Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-16">
         {/* Phone */}
         <div className="luxury-card rounded-2xl p-6 space-y-3 bg-white flex flex-col justify-between">
           <div className="space-y-2">

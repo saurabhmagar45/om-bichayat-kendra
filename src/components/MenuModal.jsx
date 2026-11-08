@@ -27,7 +27,7 @@ export function MenuModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-4 sm:p-6 font-sans">
+    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-3 sm:p-6 font-sans">
       {/* Backdrop */}
       <div
         onClick={() => setActiveMenuPackage(null)}
@@ -35,25 +35,25 @@ export function MenuModal() {
       />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-3xl bg-[#FAF7F2] rounded-2xl overflow-hidden shadow-2xl border border-[#C6A15B]/40 z-10 animate-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-3xl max-h-[92vh] flex flex-col bg-[#FAF7F2] rounded-2xl overflow-hidden shadow-2xl border border-[#C6A15B]/40 z-10 animate-in zoom-in-95 duration-200">
         {/* Header Bar */}
-        <div className="bg-[#701F35] text-[#FAF7F2] px-6 py-4 flex items-center justify-between border-b border-[#C6A15B]/30">
-          <div className="flex items-center gap-2">
-            <UtensilsCrossed className="w-5 h-5 text-[#C6A15B]" />
-            <h3 className="font-cinzel text-lg font-bold tracking-wide">
+        <div className="bg-[#701F35] text-[#FAF7F2] px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between border-b border-[#C6A15B]/30 shrink-0">
+          <div className="flex items-center gap-2 pr-2">
+            <UtensilsCrossed className="w-4 h-4 sm:w-5 sm:h-5 text-[#C6A15B] shrink-0" />
+            <h3 className="font-cinzel text-base sm:text-lg font-bold tracking-wide line-clamp-1">
               {pkg.title}
             </h3>
           </div>
           <button
             onClick={() => setActiveMenuPackage(null)}
-            className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer"
+            className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer shrink-0"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Content Body */}
-        <div className="max-h-[75vh] overflow-y-auto p-6 space-y-6">
+        <div className="overflow-y-auto p-4 sm:p-6 space-y-4 sm:space-y-6">
           {/* Quick Stats Banner */}
           <div className="p-4 bg-white rounded-xl border border-[#C6A15B]/25 flex flex-wrap items-center justify-between gap-4">
             <div>

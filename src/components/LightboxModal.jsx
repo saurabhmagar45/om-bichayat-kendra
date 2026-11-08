@@ -23,7 +23,7 @@ export function LightboxModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-4 sm:p-6 font-sans">
+    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-3 sm:p-6 font-sans">
       {/* Backdrop */}
       <div
         onClick={() => setActiveLightboxImage(null)}
@@ -31,22 +31,22 @@ export function LightboxModal() {
       />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-4xl bg-[#FAF7F2] rounded-2xl overflow-hidden shadow-2xl border border-[#C6A15B]/40 z-10 animate-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-[#FAF7F2] rounded-2xl overflow-hidden shadow-2xl border border-[#C6A15B]/40 z-10 animate-in zoom-in-95 duration-200">
         {/* Close Button */}
         <button
           onClick={() => setActiveLightboxImage(null)}
-          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/90 transition-colors cursor-pointer"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/90 transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 max-h-[85vh] overflow-y-auto">
+        <div className="grid grid-cols-1 md:grid-cols-12 overflow-y-auto">
           {/* Large High-Res Image (7 cols) */}
-          <div className="md:col-span-7 relative bg-stone-900 flex items-center justify-center min-h-[320px]">
+          <div className="md:col-span-7 relative bg-stone-900 flex items-center justify-center min-h-[220px] sm:min-h-[320px]">
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-full object-cover max-h-[550px]"
+              className="w-full h-full object-cover max-h-[300px] sm:max-h-[550px]"
             />
             <div className="absolute bottom-3 left-3 bg-[#701F35]/90 text-[#FAF7F2] text-xs px-3 py-1 rounded-full border border-[#C6A15B]/40 flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />
@@ -55,7 +55,7 @@ export function LightboxModal() {
           </div>
 
           {/* Details Column (5 cols) */}
-          <div className="md:col-span-5 p-6 sm:p-7 flex flex-col justify-between space-y-5 bg-[#FAF7F2]">
+          <div className="md:col-span-5 p-4 sm:p-7 flex flex-col justify-between space-y-4 sm:space-y-5 bg-[#FAF7F2]">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs uppercase font-bold text-[#C6A15B] tracking-wider">

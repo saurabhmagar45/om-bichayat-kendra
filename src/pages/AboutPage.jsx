@@ -35,7 +35,7 @@ export function AboutPage() {
   ];
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+    <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
       <SectionHeader
         badge="आमचा गौरवशाली वारसा"
         title="ओम बिछायत केंद्र (OM BICHAYAT KENDRA)"
@@ -43,7 +43,7 @@ export function AboutPage() {
       />
 
       {/* Story Hero Two-Column */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center mb-12 sm:mb-20">
         <div className="lg:col-span-6 space-y-5 text-sm sm:text-base text-[#574F4A] leading-relaxed">
           <span className="text-xs uppercase font-bold text-[#C6A15B] tracking-widest block">
             शुभ सुरुवात व अखंड परंपरा
